@@ -41,7 +41,7 @@ def main():
     listOfFiles = list()
     for (dirpath, dirnames, filenames) in os.walk(dirName):
         for file in filenames:
-            if ('HPROF' in file.upper()) or ('VELHO' in file.upper()) or ('ANTIGO' in file.upper()) or ('CÓPIA' in file.upper()) or ('COPIA' in file.upper()) or ('COPY' in file.upper()) or ('BKP' in file.upper()) or ('OLD' in file.upper()) or ('BACKUP' in file.upper()) or (file.endswith('.zip'))\
+            if ('(' in file and ')' in file) or ('HPROF' in file.upper()) or ('VELHO' in file.upper()) or ('ANTIGO' in file.upper()) or ('CÓPIA' in file.upper()) or ('COPIA' in file.upper()) or ('COPY' in file.upper()) or ('BKP' in file.upper()) or ('OLD' in file.upper()) or ('BACKUP' in file.upper()) or (file.endswith('.zip'))\
             or (file.endswith('.rar') or (file.endswith('.7z'))):
                 listOfFiles += [os.path.join(dirpath, file)]
         
