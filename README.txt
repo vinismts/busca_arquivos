@@ -11,6 +11,7 @@ Lista em um arquivo txt os arquivos com as extensões ou que contenham os nomes 
 *copy*
 *cópia*
 *copia*
+*hprof*
 *(*)*
 
 O objetivo é facilitar a limpeza de arquivos temporários realizados pelos usuários e por aqueles que dão manutenção ao servidor.
